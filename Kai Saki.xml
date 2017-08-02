@@ -7,8 +7,8 @@
 	<rectangle color="#cccccc" xMax="200" xMin="0" yMax="200" yMin="0"/>
 	</shape>
 	<general>
-		<name>Becky</name>
-		<slug>Becky</slug>
+		<name>Kai Saki</name>
+		<slug>Kai</slug>
 		<firmwareName>Repetier-Firmware</firmwareName>
 		<printerVariant>cartesian</printerVariant>
 		<active>true</active>
