@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<printer>
+	<shape>
+		<grid color="#454545" spacing="10"/>
+		
+	
+	<rectangle color="#cccccc" xMax="200" xMin="0" yMax="200" yMin="0"/>
+	</shape>
+	<general>
+		<name>Becky</name>
+		<slug>Becky</slug>
+		<firmwareName>Repetier-Firmware</firmwareName>
+		<printerVariant>cartesian</printerVariant>
+		<active>true</active>
+		<fan>true</fan>
+		<tempUpdateEvery>1</tempUpdateEvery>
+		<sdcard>true</sdcard>
+		<softwarePower>true</softwarePower>
+		<defaultVolumetric>false</defaultVolumetric>
+	</general>
+	<connection>
+		<serial>
+			<baudrate>250000</baudrate>
+			<device>/dev/tty.Bluetooth-Incoming-Port</device>
+			<pingPong>true</pingPong>
+			<inputBufferSize>127</inputBufferSize>
+			<communicationTimeout>30</communicationTimeout>
+			<protocol>0</protocol>
+		</serial>
+		<lcdTimeMode>4</lcdTimeMode>
+		<resetScript/>
+	</connection>
+	<movement>
+		<xMin>0</xMin>
+		<xMax>200</xMax>
+		<xHome>0</xHome>
+		<yMin>0</yMin>
+		<yMax>200</yMax>
+		<yHome>0</yHome>
+		<zMin>0</zMin>
+		<zMax>180</zMax>
+		<zHome>0</zHome>
+		<xyJerk>30</xyJerk>
+		<zJerk>0.30000000000000004</zJerk>
+		<timeMultiplier>1</timeMultiplier>
+		<movebuffer>24</movebuffer>
+		<xySpeed max="20000">100</xySpeed>
+		<zSpeed max="2">1</zSpeed>
+		<xyPrintAcceleration>4500</xyPrintAcceleration>
+		<xyTravelAcceleration>5000</xyTravelAcceleration>
+		<zPrintAcceleration>100</zPrintAcceleration>
+		<zTravelAcceleration>100</zTravelAcceleration>
+		<endstops all="true" x="true" y="true" z="true"/>
+		<invert x="false" y="false" z="false"/>
+		<G10Speed>20</G10Speed>
+		<G10Distance>30</G10Distance>
+		<G10LongDistance>20</G10LongDistance>
+		<G11Speed>20</G11Speed>
+		<G11ExtraDistance>0</G11ExtraDistance>
+		<G11ExtraLongDistance>0</G11ExtraLongDistance>
+		<G10ZLift>20</G10ZLift>
+	</movement>
+	<extruders>
+		<extruder changeFastDistance="20" changeSlowDistance="20" filamentDiameter="1.75" lastTemp="210" maxTemp="220" num="0">
+			<alias/>
+			<maxSpeed acceleration="10000" jerk="50" max="100"/>
+			<extrude speed="2"/>
+			<retract speed="30"/>
+			<tempChange cooldownPerSecond="0.5" heatupPerSecond="2"/>
+			<offsets x="0" y="0"/>
+			<temperatures>
+				<temperature value="245">ABS 245</temperature>
+				<temperature value="210">PLA 210</temperature>
+				<temperature value="195">PLA 195</temperature>
+			</temperatures>
+		</extruder>
+	</extruders>
+	<heatedBed cooldownPerSecond="4.02" heatupPerSecond="0.2" installed="true" lastTemp="0" maxTemp="120">
+		<temperatures>
+			<temperature value="50">ABS</temperature>
+			<temperature value="50">PLA</temperature>
+		</temperatures>
+	</heatedBed>
+	<quickCommands>
+		<quickCommand name="">M452;</quickCommand>
+	</quickCommands>
+	<webcam>
+		<method>0</method>
+		<timelapseMethod>0</timelapseMethod>
+		<staticUrl/>
+		<dynamicUrl/>
+		<orientation>0</orientation>
+		<reloadInterval>3</reloadInterval>
+		<timelapseInterval>20</timelapseInterval>
+		<timelapseHeight>0.1</timelapseHeight>
+		<timelapseLayer>1</timelapseLayer>
+		<timelapseBitrate>1000</timelapseBitrate>
+		<timelapseSelected>0</timelapseSelected>
+		<timelapseFramerate>30</timelapseFramerate>
+	</webcam>
+	<properties/>
+<scripts/>
+</printer>
