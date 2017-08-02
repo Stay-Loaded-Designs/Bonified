@@ -24,7 +24,7 @@
 			<device>/dev/tty.Bluetooth-Incoming-Port</device>
 			<pingPong>true</pingPong>
 			<inputBufferSize>127</inputBufferSize>
-			<communicationTimeout>30</communicationTimeout>
+			<communicationTimeout>0</communicationTimeout>
 			<protocol>0</protocol>
 		</serial>
 		<lcdTimeMode>4</lcdTimeMode>
